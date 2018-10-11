@@ -10,7 +10,7 @@ if(OROCOS-RTT_CORBA_FOUND)
 
   # for jacobian and jntarray
   find_package(Eigen3 QUIET)
-  if(NOT Eigen3_FOUND)
+  if(NOT EIGEN3_FOUND)
     find_package(cmake_modules QUIET)
     find_package(Eigen QUIET)
     if(Eigen_FOUND)
