@@ -3,7 +3,7 @@ find_package(OROCOS-RTT 2.0.0 COMPONENTS rtt-transport-mqueue)
 if(OROCOS-RTT_MQUEUE_FOUND)
 
   find_package(Eigen3 QUIET)
-  if(NOT Eigen3_FOUND)
+  if(NOT EIGEN3_FOUND)
     find_package(cmake_modules QUIET)
     find_package(Eigen QUIET)
     if(Eigen_FOUND)
